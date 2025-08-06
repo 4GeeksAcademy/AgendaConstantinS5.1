@@ -98,7 +98,7 @@ export const AddContact = () => {
                     />
                 </div>
                 <button type="submit">{isEditing ? "Update" : "Save"}</button>
-                <Link to="/contact/agendas/:slug/contacts">Cancel</Link>
+                <Link to={`/contact/agendas/${slug}/contacts`}>Cancel</Link>
             </form>
         </div>
     );

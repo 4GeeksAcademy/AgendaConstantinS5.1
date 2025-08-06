@@ -31,15 +31,22 @@ export const CreateUser = ({ onUserCreated }) => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
-            <input
-                type="text"
-                name="slug"
-                value={user.slug}
-                onChange={handleInput}
-                placeholder="User name"
-            />
-            <button type="submit">Create User</button>
-        </form>
+        <div>
+            <div className="">
+                <form className="" onSubmit={handleSubmit}>
+                    <input
+                    style={{height:"30px", alignContent:"start"}}
+                        type="text"
+                        name="slug"
+                        value={user.slug}
+                        onChange={handleInput}
+                        placeholder="User name"
+                    />
+                    <button type="submit">Create User</button>
+                </form>
+            </div>
+
+        </div>
+
     );
 };
